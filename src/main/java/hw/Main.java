@@ -3,13 +3,11 @@ package hw;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
-
+public class Main
+{
   public static void main(String[]args)
   {
-    System.out.println("Please enter an integer");
-    Scanner keyboard=new Scanner(System.in);
-    int number=keyboard.nextInt();
+    int number=Integer.parseInt(args[0]);
     for(int i=1;i<=number;i++)
     {
       if ((i%3==0)&&(i%5==0))
